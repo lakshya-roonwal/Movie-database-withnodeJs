@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/91b12dce8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Database</title>
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="container">
+    <div class="loginbox first">
+            <div class="imgbox">
+                <img src="./img/clement-m-JIOP2qvo8yk-unsplash.jpg" alt="" class="imgbox_img">
+            </div>
+            <div class="formbox first">
+                <h1 class="heading">The movie Data Base</h1>
+                <form action="/getmovie" method="post" class="form">
+                    <input type="text" placeholder="movies Name" id="movie-name-in" name="moviename">
+                    <input type="text" placeholder="movies Year" id="movie-year-in" name="movieyear">
+                    <button type="submit" class="btn">Submit</button>
+                    <div class="btn_reg">
+                        <p class="para">Because movies arn't just movies<br> its an experience</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created by Lakshya</p>
+        <a href="https://instagram.com/lakshya_roonwal_"><i class="fab fa-instagram"></i></a>
+    </footer>
+</body>
+<script>
+    let loader=document.getElementById('preloader');
+    window.addEventListener("load",()=>{
+        loader.style.display="none";
+    })
+</script>
+</html>

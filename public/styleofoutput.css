@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap);
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+.container
+{
+    height: auto;
+    width: 50vw;
+}
+.heading
+{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.1vw;
+    font-size: 7vh;
+}
+.poster_and_basic
+{
+    display: flex;
+    justify-content: space-between;
+}
+.poster
+{
+    width: 70%;
+}
+.poster img,
+.pos-img
+{
+    width: 13vw;
+    margin: auto;
+    display: block;
+}
+.poster img
+{
+    object-fit: cover;
+}
+.basic-details
+{
+    width: 50%;
+    font-size: 2.2vh;
+}
+span
+{
+    font-weight: bold;
+}
+.sub-heading
+{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.1vw;
+    font-size: 4vh;
+}
+.other-details
+{
+    padding: 1vw;
+    margin-left: 7.5vw;
+}
+.notfound-heaing,notfoudn-para
+{
+    text-align: center;
+}
+@media(max-width:700px)  {
+    .other-detail
+    {
+        width: 80vw;
+        font-size: 1;
+    }
+    .poster img
+    {
+        height: 40vh;
+        width: auto;
+        margin-left: 0;
+        display: block;
+        margin: auto;
+    }
+    .poster_and_basic
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .basic-details {
+        width: 80vw;
+        margin: 0;
+    }
+    .container
+    {
+        width: 80vw;
+    }
+    
+}
