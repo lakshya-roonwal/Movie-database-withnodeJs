@@ -13,7 +13,6 @@ app.post('/getmovie',urlencoded,(req,res)=>{
     fetch(`http://www.omdbapi.com/?t=${req.body.moviename}&y=${req.body.movieyear}&apikey=6af4e10d`)
     .then((data) => data.json())
     .then((moviedata) => {
-        console.log(moviedata);
         res.render('movie.pug',{mdata:moviedata})
     })
 })
