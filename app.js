@@ -2,7 +2,7 @@ const express=require('express')
 const app=express()
 const fetch=require('node-fetch')
 const bodyParser=require('body-parser')
-const port=80;
+const port=process.env.PORT || 8000;
 
 
 app.use(express.static('./public'));
