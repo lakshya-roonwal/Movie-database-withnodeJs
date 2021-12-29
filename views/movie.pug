@@ -6,48 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleofoutput.css">
     <title>Movie Data Base</title>
+    
 </head>
 <body>
     <div class="container">
-    if !mdata.Response
-        h1.notfound-heaing Movie not found 
-        p.notfoudn-para Please try again with right spelling 
-    else 
-        <h1 class="heading">Your movie details</h1>
-        <div class="poster_and_basic">
-            <div class="poster">
-                img(src=mdata.Poster, alt='Poster Not Available')
+        if !mdata.Response
+            h1.notfound-heaing Movie not found 
+            p.notfoudn-para Please try again with right spelling 
+        else 
+            <h1 class="heading">Your movie details</h1>
+            <div class="poster_and_basic">
+                <div class="poster">
+                    img(src=mdata.Poster, alt='Poster Not Available')
+                </div>
+                <div class="basic-details">
+                    <p class="basic-detail-para"><span>Name: </span>#{mdata.Title}</p>
+                    <p class="basic-detail-para"><span>Year: </span>#{mdata.Year}</p>
+                    <p class="basic-detail-para"><span>Realease Date:</span>Date: #{mdata.Released}</p>
+                    <p class="basic-detail-para"><span>Genre: </span>#{mdata.Genre}</p>
+                    <p class="basic-detail-para"><span>Runtime: </span>#{mdata.Runtime}</p>
+                    <p class="basic-detail-para"><span>Plot: </span>#{mdata.Plot}</p>
+                </div>
             </div>
-            <div class="basic-details">
-                <p class="basic-detail-para"><span>Name: </span>#{mdata.Title}</p>
-                <p class="basic-detail-para"><span>Year: </span>#{mdata.Year}</p>
-                <p class="basic-detail-para"><span>Realease Date:</span>Date: #{mdata.Released}</p>
-                <p class="basic-detail-para"><span>Genre: </span>#{mdata.Genre}</p>
-                <p class="basic-detail-para"><span>Runtime: </span>#{mdata.Runtime}</p>
-                <p class="basic-detail-para"><span>Plot: </span>#{mdata.Plot}</p>
+            <div class="other-detail">
+                <h3 class="sub-heading">Other Details</h3>
+                <p class="other-details"><span>Rated: </span>#{mdata.Rated}</p>
+                <p class="other-details"><span>Director: </span>#{mdata.Director}</p>
+                <p class="other-details"><span>Writer: </span>#{mdata.Writer}</p>
+                <p class="other-details"><span>Actors: </span>#{mdata.Actors}</p>
+                <p class="other-details"><span>Language: </span>#{mdata.Language}</p>
+                <p class="other-details"><span>Country: </span>#{mdata.Country}</p>
+                <p class="other-details"><span>Awards: </span>#{mdata.Awards}</p>
+                <p class="other-details"><span>Ratings: </span>#{mdata.Raings}</p>
+                <p class="other-details"><span>Metascore: </span>#{mdata.Metascore}</p>
+                <p class="other-details"><span>imdbRating: </span>#{mdata.imdbRating}</p>
+                <p class="other-details"><span>imdbVotes: </span>#{mdata.imdbVotes}</p>
+                <p class="other-details"><span>imdbID: </span>#{mdata.imdbID}</p>
+                <p class="other-details"><span>Type: </span>#{mdata.Type}</p>
+                <p class="other-details"><span>DVD: </span>#{mdata.DVD}</p>
+                <p class="other-details"><span>BoxOffice: </span>#{mdata.BoxOffice}</p>
+                <p class="other-details"><span>Production: </span>#{mdata.Production}</p>
+                <p class="other-details"><span>Website: </span>#{mdata.Website}</p>
             </div>
-        </div>
-        <div class="other-detail">
-            <h3 class="sub-heading">Other Details</h3>
-            <p class="other-details"><span>Rated: </span>#{mdata.Rated}</p>
-            <p class="other-details"><span>Director: </span>#{mdata.Director}</p>
-            <p class="other-details"><span>Writer: </span>#{mdata.Writer}</p>
-            <p class="other-details"><span>Actors: </span>#{mdata.Actors}</p>
-            <p class="other-details"><span>Language: </span>#{mdata.Language}</p>
-            <p class="other-details"><span>Country: </span>#{mdata.Country}</p>
-            <p class="other-details"><span>Awards: </span>#{mdata.Awards}</p>
-            <p class="other-details"><span>Ratings: </span>#{mdata.Raings}</p>
-            <p class="other-details"><span>Metascore: </span>#{mdata.Metascore}</p>
-            <p class="other-details"><span>imdbRating: </span>#{mdata.imdbRating}</p>
-            <p class="other-details"><span>imdbVotes: </span>#{mdata.imdbVotes}</p>
-            <p class="other-details"><span>imdbID: </span>#{mdata.imdbID}</p>
-            <p class="other-details"><span>Type: </span>#{mdata.Type}</p>
-            <p class="other-details"><span>DVD: </span>#{mdata.DVD}</p>
-            <p class="other-details"><span>BoxOffice: </span>#{mdata.BoxOffice}</p>
-            <p class="other-details"><span>Production: </span>#{mdata.Production}</p>
-            <p class="other-details"><span>Website: </span>#{mdata.Website}</p>
-        </div>
+            <input type = "button" value = "Print" onclick = "window.print()" class="btn"/>
     </div>
-
 </body>
 </html>

@@ -69,6 +69,18 @@ span
 {
     text-align: center;
 }
+.btn
+{
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 0;
+    border: none;
+    background-color: #677df8;
+    color: white;
+    letter-spacing: 1px;
+    padding: 0.5vw 2vw;
+    font-size: 1.1vw;
+}
 @media(max-width:700px)  {
     .other-detail
     {
