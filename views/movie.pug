@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleofoutput.css">
+    <script src="https://kit.fontawesome.com/91b12dce8e.js" crossorigin="anonymous"></script>
     <title>Movie Data Base</title>
     
 </head>
 <body>
+    <nav>
+        <h1>MA</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/wishlist">Wishlist</a></li>
+        </ul>
+    </nav>
+    <p id="wishlist-text">Add to wishlist <i class="far fa-heart" id="wishlist-icon"></i></p>
     <div class="container">
         if !mdata.Response
             h1.notfound-heaing Movie not found 
@@ -50,5 +59,7 @@
             </div>
             <input type = "button" value = "Print" onclick = "window.print()" class="btn"/>
     </div>
+    <script src="/scriptforoutput.js">
+    </script>
 </body>
 </html>

@@ -16,6 +16,9 @@ app.post('/getmovie',urlencoded,(req,res)=>{
         res.render('movie.pug',{mdata:moviedata})
     })
 })
+app.get('/wishlist',(req,res)=>{
+    res.render('wishlist.pug');
+})
 app.listen(port,()=>{
     console.log(`Server is running at http://localhost:${port}`);
 })
